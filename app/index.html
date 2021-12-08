@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- links -->
+	<!-- slider -->
+	<link rel="stylesheet" href="./libs/splide-2.4.21/dist/css/splide-core.min.css">
+	<!-- Map -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<!-- my style -->
+	<link rel="stylesheet" href="./css/style.min.css">
+	<!-- title -->
+	<title>Monticello</title>
+	<meta name="description" content="Monticello">
+	<!-- =========== -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- =========== -->
+	<meta property="og:image:width" content="279">
+	<meta property="og:image:height" content="279">
+	<meta property="og:description" content="Everything you need to know about the topic you are looking for">
+	<meta property="og:title" content="Monticello">
+	<meta property="og:url" content="http://example.com/path/to/image">
+	<meta property="og:image" content="http://example.com/path/to/image/og-image.jpg">
+
+</head>
+
+<body>
+
+<header id="header" class="header">
+	<div class="container">
+
+		<div class="header__inner">
+
+			<a class="logo" href="./index.html">
+				<img src="./images/logo.png" alt="Logo" title="Monticello">
+			</a>
+
+			<button data-close-id="burger-head" class="burger-toggle">
+				<!-- burger-toggle_active -->
+				<span class="burger-lines"></span>
+			</button>
+
+			<nav id="burger-head" class="nav nav_burger">
+				<!-- nav_bg nav_burger_active -->
+				<ul class="nav__list nav__list_burger">
+					<li class="nav__item nav__item_burger">
+						<div class="circle circle_nav-circle circle_active"></div>
+						<a href="about-us" class="nav__link underline-hover">
+							about us
+						</a>
+					</li>
+					<li class="nav__item nav__item_burger">
+						<div class="circle circle_nav-circle"></div>
+						<a href="projects" class="nav__link underline-hover">
+							projects
+						</a>
+					</li>
+					<li class="nav__item nav__item_burger">
+						<div class="circle circle_nav-circle"></div>
+						<a href="news" class="nav__link underline-hover">
+							news
+						</a>
+					</li>
+					<li class="nav__item nav__item_burger">
+						<div class="circle circle_nav-circle"></div>
+						<a href="contact" class="nav__link underline-hover">
+							contact
+						</a>
+					</li>
+					<li class="nav__item nav__item_burger">
+
+						<div class="socials socials_burger">
+							<a class="social" href="#">
+								<svg class="svg">
+									<use href="./images/sprite.svg#facebook" />
+								</svg>
+							</a>
+
+							<a class="social" href="#">
+								<svg class="svg">
+									<use href="./images/sprite.svg#twitter" />
+								</svg>
+							</a>
+
+							<a class="social" href="#">
+								<svg class="svg">
+									<use href="./images/sprite.svg#instagram" />
+								</svg>
+							</a>
+						</div>
+					</li>
+				</ul>
+
+			</nav>
+
+			<div class="socials socials_header">
+				<a class="social" href="#">
+					<svg class="svg">
+						<use href="./images/sprite.svg#facebook" />
+					</svg>
+				</a>
+
+				<a class="social" href="#">
+					<svg class="svg">
+						<use href="./images/sprite.svg#twitter" />
+					</svg>
+				</a>
+
+				<a class="social" href="#">
+					<svg class="svg">
+						<use href="./images/sprite.svg#instagram" />
+					</svg>
+				</a>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<span id="close-span" class="close-span"></span>
+
+<main>
+
+	<section data-scroll-here id="about-us" class="home">
+
+		<div class="home-splide">
+
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+
+						<div class="slide__wrapper-img">
+							<img class="slider-img" src="./images/home/01.jpg" alt="1">
+						</div>
+
+						<div class="home-content">
+							<div class="container container_home">
+
+								<h1 class="home-title__title">
+									Simple & mordern
+								</h1>
+								<h2 class="home-title__subtitle">
+									We make the world's beautiful every day
+								</h2>
+
+							</div>
+
+						</div>
+
+					</li>
+					<li class="splide__slide">
+
+						<div class="slide__wrapper-img">
+							<img class="slider-img" src="./images/home/02.jpg" alt="1">
+						</div>
+
+						<div class="home-content">
+							<div class="container container_home">
+
+								<h2 class="home-title__title">
+									Simple & lorem
+								</h2>
+								<h2 class="home-title__subtitle">
+									We make the world's beautiful every day
+								</h2>
+
+							</div>
+
+						</div>
+
+					</li>
+					<li class="splide__slide">
+
+						<div class="slide__wrapper-img">
+							<img class="slider-img" src="./images/home/03.jpg" alt="1">
+						</div>
+
+						<div class="home-content">
+							<div class="container container_home">
+
+								<h2 class="home-title__title">
+									lorem & mordern
+								</h2>
+								<h2 class="home-title__subtitle">
+									We make the world's beautiful every day
+								</h2>
+
+							</div>
+
+						</div>
+
+					</li>
+					<li class="splide__slide">
+
+						<div class="slide__wrapper-img">
+							<img class="slider-img" src="./images/home/04.jpg" alt="1">
+						</div>
+
+						<div class="home-content">
+							<div class="container container_home">
+
+								<h2 class="home-title__title">
+									lorem & ipsum
+								</h2>
+								<h2 class="home-title__subtitle">
+									We make the world's beautiful every day
+								</h2>
+
+							</div>
+
+						</div>
+
+					</li>
+					<li class="splide__slide">
+
+						<div class="slide__wrapper-img">
+							<img class="slider-img" src="./images/home/01.jpg" alt="1">
+						</div>
+
+						<div class="home-content">
+							<div class="container container_home">
+
+								<h2 class="home-title__title">
+									Simple & mordern
+								</h2>
+								<h2 class="home-title__subtitle">
+									We make the world's beautiful every day
+								</h2>
+
+							</div>
+
+						</div>
+
+					</li>
+				</ul>
+			</div>
+
+
+			<a class="btn-next-section" href="projects">
+				<span class="arrow-circle"></span>
+			</a>
+
+		</div>
+
+
+	</section>
+
+	<section data-scroll-here id="projects" class="project">
+		<div class="container">
+			<h2 class="section-title section-title_m-bottom">
+				What we do
+			</h2>
+
+			<div class="wrapper">
+
+				<div class="image-inner">
+					<div class="image-inner__bg"></div>
+					<img class="img" src="./images/projects/01.jpg" alt="Tade center image" title="Trade center">
+
+				</div>
+
+				<div class="content content_padding-top">
+					<h3 class="small-title">
+						one world
+					</h3>
+					<h3 class="content__title">
+						Trade center
+					</h3>
+
+					<p class="text text_margin">
+						Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+						The truth is, our thoughts are very powerful.
+					</p>
+
+					<button class="btn">
+						<span class="btn__text">
+							More detalis
+						</span>
+					</button>
+
+					<a class="addres addres_margin" href="#">
+						<svg class="svg" viewBox="0 0 384 512">
+							<use href="./images/sprite.svg#marker" />
+						</svg>
+
+						<span>New Your City, United States - 1776 feet</span>
+
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="wrapper wrapper_m-top">
+
+				<div class="image-inner image-inner_right">
+
+					<div class="image-inner__bg image-inner__bg_right"></div>
+					<img class="img" src="./images/projects/02.jpg" alt="Tade center image" title="Trade center">
+
+				</div>
+
+				<div class="content content_padding-top">
+					<h3 class="small-title">
+						international
+					</h3>
+					<h3 class="content__title">
+						commerce centre
+					</h3>
+
+					<p class="text text_margin">
+						Successful businesses have many things in common, today we’ll look at the big ‘R’ of
+						recognition and how a digital advertising network may help.
+					</p>
+
+					<button class="btn">
+						<span class="btn__text">
+							More detalis
+						</span>
+					</button>
+
+					<a class="addres addres_margin" href="#">
+						<svg class="svg" viewBox="0 0 384 512">
+							<use href="./images/sprite.svg#marker" />
+						</svg>
+
+						Hong Kong - 1588 Feet
+
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section data-scroll-here id="news" class="news news_margin">
+		<img class="bg-img bg-img_contain" src="./images/news/bg.png" alt="Background image">
+		<div class="container ">
+			<div class="news__wrapper">
+
+				<h2 class="section-title section-title_light-color">
+					Latest news
+				</h2>
+
+				<div class="splide news-splide">
+
+					<div class="splide__arrows news__arrows">
+
+						<button class="splide__arrow splide__arrow--prev splide__arrow--prev_news">
+							<span class="arrow-circle arrow-circle_blue"></span>
+						</button>
+
+						<button class="splide__arrow splide__arrow--next splide__arrow--next_news">
+							<span class="arrow-circle arrow-circle_blue"></span>
+						</button>
+
+					</div>
+
+					<div class="splide__track ">
+						<ul class="splide__list">
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/01.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												See The Unmatched Beauty Of The Great.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Free directories: directories are perfect for customers that are...
+											searching for
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/01.jpg" alt="Author"
+													title="Isaac Dunn">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Isaac dunn
+												</p>
+												<p class="date">
+													09 Feb 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/02.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Effective Advertising Pointers.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Having a home based business is a wonderful asset to your life..
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/02.jpg" alt="Author"
+													title="Dominic Freeman">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Dominic Freeman
+												</p>
+												<p class="date">
+													27 Apr 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/03.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Hypnotize Yourself Into The Ghost.
+											</a>
+										</h3>
+										<p class="text text_card">
+											There are many things that are important to catalog design....
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/03.jpg" alt="Author"
+													title="Alice Ward">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Alice Ward
+												</p>
+												<p class="date">
+													30 Dec 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/01.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												See The Unmatched Beauty Of The Great.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Free directories: directories are perfect for customers that are...
+											searching for
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/01.jpg" alt="Author"
+													title="Isaac Dunn">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Isaac dunn
+												</p>
+												<p class="date">
+													09 Feb 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/02.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Effective Advertising Pointers.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Having a home based business is a wonderful asset to your life..
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/02.jpg" alt="Author"
+													title="Dominic Freeman">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Dominic Freeman
+												</p>
+												<p class="date">
+													27 Apr 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/03.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Hypnotize Yourself Into The Ghost.
+											</a>
+										</h3>
+										<p class="text text_card">
+											There are many things that are important to catalog design....
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/03.jpg" alt="Author"
+													title="Alice Ward">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Alice Ward
+												</p>
+												<p class="date">
+													30 Dec 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/01.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												See The Unmatched Beauty Of The Great.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Free directories: directories are perfect for customers that are...
+											searching for
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/01.jpg" alt="Author"
+													title="Isaac Dunn">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Isaac dunn
+												</p>
+												<p class="date">
+													09 Feb 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/02.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Effective Advertising Pointers.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Having a home based business is a wonderful asset to your life..
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/02.jpg" alt="Author"
+													title="Dominic Freeman">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Dominic Freeman
+												</p>
+												<p class="date">
+													27 Apr 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/03.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Hypnotize Yourself Into The Ghost.
+											</a>
+										</h3>
+										<p class="text text_card">
+											There are many things that are important to catalog design....
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/03.jpg" alt="Author"
+													title="Alice Ward">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Alice Ward
+												</p>
+												<p class="date">
+													30 Dec 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/01.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												See The Unmatched Beauty Of The Great.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Free directories: directories are perfect for customers that are...
+											searching for
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/01.jpg" alt="Author"
+													title="Isaac Dunn">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Isaac dunn
+												</p>
+												<p class="date">
+													09 Feb 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/02.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Effective Advertising Pointers.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Having a home based business is a wonderful asset to your life..
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/02.jpg" alt="Author"
+													title="Dominic Freeman">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Dominic Freeman
+												</p>
+												<p class="date">
+													27 Apr 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/03.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Hypnotize Yourself Into The Ghost.
+											</a>
+										</h3>
+										<p class="text text_card">
+											There are many things that are important to catalog design....
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/03.jpg" alt="Author"
+													title="Alice Ward">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Alice Ward
+												</p>
+												<p class="date">
+													30 Dec 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/01.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												See The Unmatched Beauty Of The Great.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Free directories: directories are perfect for customers that are...
+											searching for
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/01.jpg" alt="Author"
+													title="Isaac Dunn">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Isaac dunn
+												</p>
+												<p class="date">
+													09 Feb 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/02.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Effective Advertising Pointers.
+											</a>
+										</h3>
+										<p class="text text_card">
+											Having a home based business is a wonderful asset to your life..
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/02.jpg" alt="Author"
+													title="Dominic Freeman">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Dominic Freeman
+												</p>
+												<p class="date">
+													27 Apr 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+
+							<li class="splide__slide">
+								<!-- =========== -->
+								<div class="card">
+
+									<a class="card-img" href="#">
+										<div class="card-img__plus">
+											<span class="plus"></span>
+										</div>
+										<img class="bg-img bg-img_opacity" src="./images/news/cards/03.jpg" alt="News image" title="news">
+									</a>
+									<div class="card__content">
+
+										<h3 class="card__title">
+											<a class="card__link" href="#">
+												Hypnotize Yourself Into The Ghost.
+											</a>
+										</h3>
+										<p class="text text_card">
+											There are many things that are important to catalog design....
+										</p>
+
+										<div class="card-author card-author_margin-top">
+											<div class="card-author__img">
+												<img class="bg-img bg-img_opacity" src="./images/news/cards/author/03.jpg" alt="Author"
+													title="Alice Ward">
+											</div>
+											<div class="card-author__info">
+												<p class="text text_name">
+													Alice Ward
+												</p>
+												<p class="date">
+													30 Dec 2017
+												</p>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+								<!-- =========== -->
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="gallery">
+		<div class="container">
+
+			<h2 class="section-title">
+				Gallery
+			</h2>
+
+			<div class="filter__btns">
+
+				<button data-filter-city="HongCong" class="btn filter__btn">
+					<span class="btn__text">
+						Hong Cong
+					</span>
+				</button>
+
+				<button data-filter-city="NewYour" class="btn filter__btn">
+					<span class="btn__text">
+						New Your
+					</span>
+				</button>
+
+				<button data-filter-city="Ukraine" class="btn filter__btn">
+					<span class="btn__text">
+						Ukraine
+					</span>
+				</button>
+
+			</div>
+
+			<div id="gallry-wrapper" class="grid__wrapper grid__wrapper_margin">
+
+				<div class="item item_big">
+					<button class="item-btn">
+						<img class="item-btn__img" src="./images/gallery/btn/360.png" alt="360" title="360">
+					</button>
+					<div class="bg-color_light"></div>
+					<a class="item__link" href="#">
+						<img class="bg-img bg-img_opacity" src="./images/gallery/Hong-Cong/01.jpg" alt="House" title="01">
+					</a>
+				</div>
+
+				<div class="item">
+					<div class="bg-color_light"></div>
+					<a class="item__link" href="#">
+						<img class="bg-img bg-img_opacity" src="./images/gallery/Hong-Cong/02.jpg" alt="House" title="01">
+					</a>
+				</div>
+
+				<div class="item">
+					<div class="bg-color_light"></div>
+					<a class="item__link" href="#">
+						<img class="bg-img bg-img_opacity" src="./images/gallery/Hong-Cong/03.jpg" alt="House" title="01">
+					</a>
+				</div>
+
+				<div class="item">
+					<div class="bg-color_light"></div>
+					<a class="item__link" href="#">
+						<img class="bg-img bg-img_opacity" src="./images/gallery/Hong-Cong/04.jpg" alt="House" title="01">
+					</a>
+				</div>
+
+				<div class="item item-5">
+					<div class="bg-color_light"></div>
+					<a class="item__link" href="#">
+						<img class="bg-img bg-img_opacity" src="./images/gallery/Hong-Cong/05.jpg" alt="House" title="01">
+					</a>
+				</div>
+
+			</div>
+
+			<button class="btn btn_margin">
+				<span class="btn__text">
+					See more
+				</span>
+			</button>
+
+		</div>
+	</section>
+
+	<section>
+		<div id="map" class="map"></div>
+	</section>
+
+</main>
+
+<footer data-scroll-here id="contact" class="footer ">
+	<img class="bg-img" src="./images/footer/bg.jpg" alt="Background image">
+
+	<div class="container container_z-inedx-3">
+		<div class="contact-content contact-content_pos contact-content_padding">
+			<h2 class="section-title">
+				Get in touch
+			</h2>
+			<div class="contact-wrapper">
+
+				<div class="contact__info contact-wrapper__item">
+
+					<p class="text text_flex text_no-wrap ">
+						<svg class="svg svg_fill svg_contact" viewBox="0 0 384 512">
+							<use xlink:href="./images/sprite.svg#marker" />
+						</svg>
+						<a class="link"
+							href="https://www.google.com.ua/maps/place/%D0%91%D1%80%D1%83%D0%BA%D0%BB%D0%B8%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6453531,-74.0150371,12z/data=!3m1!4b1!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579?hl=ru"
+							target="_blank">
+							91 Nolan Extensions Suite 670
+						</a>
+					</p>
+					<p class="text text_flex text_no-wrap text_mt">
+						<svg class="svg svg_fill svg_contact" viewBox="0 0 22 28">
+							<use xlink:href="./images/sprite.svg#phone" />
+						</svg>
+						<a class="link" href="tel:+001-356-868-2454">
+							+001 356-868-2454
+						</a>
+					</p>
+					<p class="text text_flex text_no-wrap text_mt">
+						<svg class="svg svg_fill svg_contact" viewBox="0 0 24 28">
+							<use xlink:href="./images/sprite.svg#box" />
+						</svg>
+						<a class="link" href="mailto:apelsinka220405@gmail.com@subject='header'">
+							gahuy93@gmail.com
+						</a>
+					</p>
+					<p class="text text_flex text_no-wrap text_mt">
+						<svg class="svg svg_fill svg_contact" viewBox="0 0 24 28">
+							<use xlink:href="./images/sprite.svg#clock" />
+						</svg>
+						<a class="link" href="#" target="_blank">
+							From 07:05AM to 19:30PM
+						</a>
+					</p>
+				</div>
+
+				<!-- form -->
+				<form action="#" id="form" class="form contact-wrapper__item">
+
+					<input data-name class="input required" type="text" placeholder="Name">
+					<!-- input_active -->
+					<div class="input-line"></div>
+
+					<input data-email class="input input_mt required" type="email" placeholder="Email">
+					<div class="input-line">
+					</div>
+
+					<button data-form-id="form" data-submit class="btn btn_submit btn_mt" type="submit">
+						<span class="btn__text">
+							Submit
+						</span>
+					</button>
+
+					<div class="form-fail">
+						The form is entered incorrectly
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+		<div class="container container_small">
+
+			<div class="footer__inner">
+				<img src="./images/logo.png" alt="">
+
+				<div class="socials">
+					<a class="social" href="#">
+						<svg class="svg">
+							<use href="./images/sprite.svg#facebook" />
+						</svg>
+					</a>
+
+					<a class="social" href="#">
+						<svg class="svg">
+							<use href="./images/sprite.svg#twitter" />
+						</svg>
+					</a>
+
+					<a class="social" href="#">
+						<svg class="svg">
+							<use href="./images/sprite.svg#instagram" />
+						</svg>
+					</a>
+				</div>
+			</div>
+			<p class="text text_footer">
+				Copyrights © 2017 Monticello
+			</p>
+			<span class="space">
+				|
+			</span>
+			<p class="text text_footer">
+				Made with
+				<svg class="svg">
+					<use href="./images/sprite.svg#heart" />
+				</svg>
+				by Ga Huy
+			</p>
+		</div>
+
+	</div>
+</footer>
+
+<!-- slider -->
+<script src="./libs/splide-2.4.21/dist/js/splide.min.js"></script>
+<!-- map -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!-- /.slider -->
+<script src="./js/main.min.js"></script>
+</body>
+
+</html>
